@@ -1,46 +1,33 @@
-# Página de Trabalho
-Na parte de html/scss/ts preparamos um [protótipo de alta fidelidade no figma](https://www.figma.com/proto/0D27YdXU8ibf0AhsBC2OEm/Chuva---Exerc%C3%ADcio-Frontend?page-id=0%3A1&type=design&node-id=1-123&viewport=404%2C346%2C0.24&t=qF57GDZnZJyE7F7q-1&scaling=scale-down&starting-point-node-id=1%3A123&show-proto-sidebar=1&mode=design) de uma tela para você implementar o HTML + CSS. Você pode fazer em CSS puro, utilizar pré-processadores CSS (SASS, LESS, etc), ou mesmo utilizar um framework (Bootstrap, Foundation, Ant, etc), utilize a ferramenta que você se sentir melhor e que lhe traga o melhor resultado.)
+# Projeto para Vaga de Estágio na Chuva Inc. :cloud:
 
-![Screenshot Figma](https://github.com/chuva-inc/exercicios-2023/raw/master/ts/src/assets/figma.jpg)
--> [Link para o Protótipo](https://www.figma.com/proto/0D27YdXU8ibf0AhsBC2OEm/Chuva---Exerc%C3%ADcio-Frontend?page-id=0%3A1&type=design&node-id=1-123&viewport=404%2C346%2C0.24&t=qF57GDZnZJyE7F7q-1&scaling=scale-down&starting-point-node-id=1%3A123&show-proto-sidebar=1&mode=design)
+## Resumo do Projeto :computer:
 
--> [Link para o Editável](https://www.figma.com/file/0D27YdXU8ibf0AhsBC2OEm/Chuva---Exerc%C3%ADcio-Frontend?type=design&node-id=0%3A1&mode=design&t=yAHAJDpJya32qSBU-1)
+Este projeto foi criado como parte do meu processo de candidatura para a vaga de estágio na **Chuva Inc.** Ele é uma interface com 5 telas, desenvolvida em Angular com componentes funcionais em TypeScript. Além disso, utilizei CSS puro para estilização e escrevi testes unitários para garantir a qualidade do código (adicionei mais cobertura de testes).
+
+## Links Úteis :link:
+
+- [Vídeo 1](link-do-video-1): Sobre mim e minhas expectativas com o estágio na Chuva Inc.
+- [Vídeo 2](link-do-video-2): Validação Técnica - Sobre mim e minhas habilidades com programação.
+- <a href="https://www.linkedin.com/in/ruyluques/">LinkedIn</a>
+- <a href="https://www.ruyluques.com.br/">Portfólio</a>
+- <a href="https://github.com/RuyLuques?tab=repositories">GitHub</a>
+- <a href="https://www.youtube.com/@ruyluques/videos">YouTube</a>
+
+## Pré-requisitos :wrench:
+
+- Node.js e Angular CLI instalados
+- Navegador da Web moderno
+- Figma para visualização das telas
+
+## Como Executar o Projeto :rocket:
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repo.git
+   
+2. Instale as dependências:
+   ```bash
+   npm install
 
 
-### Como rodar
-
-Dependências:
-
-* Node/npm
-* Cypress
-
-Rode o seguinte comando para instalar o ambiente:
-
-```
-npm install
-```
-
-Para rodar os testes, rode o seguinte comando:
-
-```
-npm run test
-```
-
-
-Para rodar desenvolver, rode os seguintes comandos:
-
-Para ligar o ambiente
-```
-ng serve
-```
-
-Para rodar a UI de testes
-```
-npx cypress open --env type=base
-```
-
-### Dicas de resolução
-
-Pra facilitar sua vida, nosso repositório já vem com pronto pra consumo, e mesmo que você não for familiar com o Angular ou Typescript, dá pra só colocar o html e o scss nos arquivos corretos, e vai funcionar (inclusive os testes automatizados vão passar).
-
-Não esqueca de commitar os screenshots que o cypress gera, utilizaremos eles na correção do exercício.
+# Obrigada pelo 'clone' 😊 
