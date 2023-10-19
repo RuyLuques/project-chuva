@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SLACA 2019</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="description" content="Descrição da página">
+  <meta name="keywords" content="palavra-chave1, palavra-chave2">
+</head>
+
+<body>
+  <main class="grid grid-template-areas-4">
+    <div class="logo item">
+      <h1>SLACA 2019</h1>
+  </div>
+  <app-header class="nav item"></app-header>
+    <article class="content item">
+      <section class="content-1">
+        <section class="grid grid-template-column-2">
+          <div class="item">
+            <div class="content-video">
+              <h2 id="titulo-trabalho">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09
+                e 15 anos, do município de Campinas/SP</h2>
+            </div>
+          </div>
+          <div class="item">
+            <div class="custom-card-btn-group">
+              <div class="custom-card-btn-img">
+                <button class="custom-card-btn-img-1">
+                  <img src="assets/download.svg" alt="Ícone de download" />
+                  <p>Download</p>
+                </button>
+                <button class="custom-card-btn-img-2">
+                  <img src="assets/btn-favoritar.svg" alt="Ícone de favorito" />
+                </button>
+                <button class="custom-card-btn-img-3">
+                  <img src="assets/doi.svg" alt="Ícone DOI" />
+                </button>
+              </div>
+            </div>
+            <div class="custom-card-btn-text">
+              <h3>COMO CITAR ESSE TRABALHO?</h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid grid-template-columns answered-topic">
+          <div class="item">
+            <div class="content-content-video">
+              <div class="content-content-video-1">
+                <img src="assets/video.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="container-content-aside-right">
+              <app-details></app-details>
+            </div>
+          </div>
+        </section>
+        <section class="grid container-content-card answered-topic">
+          <section class="custom-card">
+            <app-resume></app-resume>
+          </section>
+
+          <div class="content-card">
+            <app-discussions></app-discussions>
+          </div>
+        </section>
+      </section>
+    </article>
+    <app-sidenav class="sidenav item"></app-sidenav>
+    <div class="divider"></div>
+    <app-footer class="footer item"></app-footer>
+  </main>
+</body>
+
+</html>

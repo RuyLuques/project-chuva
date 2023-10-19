@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SLACA 2019</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="description" content="Descrição da página">
+  <meta name="keywords" content="palavra-chave1, palavra-chave2">
+</head>
+
+<body>
+  <main>
+    <div class="container-content-discussions">
+      <div class="content-title">
+        <h2>Discussões</h2>
+      </div>
+      <div class="container-content-msgsuccess" *ngIf="!mostrarMensagemDeSucesso">
+        <div class="content-subtitle">
+          <p>Compartilhe suas ideias ou dúvidas com os autores!</p>
+        </div>
+        <div class="content-icons">
+          <div class="icon-item"><img src="assets/icone1.svg" alt="Ícone 1" /></div>
+          <div class="icon-item"><img src="assets/icone2.svg" alt="Ícone 2" /></div>
+          <div class="icon-item"><img src="assets/icone3.svg" alt="Ícone 3" /></div>
+        </div>
+        <div class="content-text">
+          <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
+            questionamentos ou sugestões para o autor!</p>
+        </div>
+        <div class="content-group-btn">
+          <button class="btn-create-topic" (click)="exibirFormulario()">
+            <img src="assets/btn-mais.svg" alt="Ícone 1" />
+            criar tópico
+          </button>
+          <div class="divider"></div>
+        </div>
+        <app-card></app-card>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

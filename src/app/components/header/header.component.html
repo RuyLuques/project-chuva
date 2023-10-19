@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SLACA 2019</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="description" content="Descrição da página">
+  <meta name="keywords" content="palavra-chave1, palavra-chave2">
+</head>
+
+<body>
+  <header class="nav item">
+    <nav class="navbar">
+      <section class="grid-container">
+        <div class="nav-item">
+          <div class="nav-content">
+            <p class="nav-title">Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+            <p class="nav-subtitle">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</p>
+            <p class="nav-issn">ISSN: 1234-5678</p>
+          </div>
+        </div>
+        <div class="nav-item">
+          <div class="language-container">
+            <div class="language-content" (mouseenter)="showDropdown = true" (mouseleave)="showDropdown = false">
+              <img src="assets/language.svg" alt="Ícone de Idioma" />
+              <div class="language-abbr" (click)="showDropdown = !showDropdown">
+                <p>PT, BR</p>
+                <img src="assets/dropdown.svg" alt="Seta para baixo" />
+              </div>
+              <div class="language-dropdown" [ngClass]="{'show': showDropdown}">
+                <p class="dropdown-item">Português (PT)</p>
+                <p class="dropdown-item">English (EN)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item user-info">
+          <div class="user-content">
+            <div class="user-text">
+              <p class="user-welcome">Bem-vindo!</p>
+              <p class="user-email">alguem12@galoascience.com</p>
+            </div>
+            <div class="notification-icon">
+              <img src="assets/user.png" alt="Ícone de usuário" />
+              <div class="notification-badge">2</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </nav>
+  </header>
+</body>
+
+</html>
