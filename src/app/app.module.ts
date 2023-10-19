@@ -18,7 +18,6 @@ import { MsgsuccessComponent } from './msgsuccess/msgsuccess.component';
 import { ColumnsComponent } from './components/columns/columns.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { CardFormComponent } from './components/cardform/cardform.component';
-import { FormMessageComponent } from './components/form/form.component';
 
 import { AppComponent } from './app.component';
 
@@ -40,7 +39,6 @@ import { AppComponent } from './app.component';
     ColumnsComponent,
     LogoComponent,
     CardFormComponent,
-    FormMessageComponent,
   ],
   imports: [
     BrowserModule,
