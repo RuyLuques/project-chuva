@@ -6,8 +6,7 @@ Este projeto foi criado como parte do meu processo de candidatura para a vaga de
 
 ## Links Úteis :link:
 
-- [Vídeo 1](link-do-video-1): Sobre mim e minhas expectativas com o estágio na Chuva Inc.
-- [Vídeo 2](link-do-video-2): Validação Técnica - Sobre mim e minhas habilidades com programação.
+- <a href="https://drive.google.com/drive/folders/1c_yMg262_bF411uD5m-oKBEWxvHFvieo?usp=sharing">Vídeos</a>
 - <a href="https://www.linkedin.com/in/ruyluques/">LinkedIn</a>
 - <a href="https://www.ruyluques.com.br/">Portfólio</a>
 - <a href="https://github.com/RuyLuques?tab=repositories">GitHub</a>
