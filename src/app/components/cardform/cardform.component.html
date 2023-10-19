@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SLACA 2019</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="description" content="Descrição da página">
+  <meta name="keywords" content="palavra-chave1, palavra-chave2">
+</head>
+
+<body>
+  <div class="container-content-discussions">
+    <div class="content-title">
+      <h2>Discussões</h2>
+    </div>
+    <form *ngIf="isFormularioVisivel" data-test="form-discussion">
+      <div class="container-content-form">
+        <h2 class="content-title-form" data-test="form-title">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h2>
+        <div class="container-assunto">
+          <label class="" for="assunto">Assunto</label>
+          <input type="text" data-test="field-assunto" id="assunto" name="assunto" class="subject"
+            placeholder="Defina um tópico sucinto para notificar os autores..." required [(ngModel)]="assunto" />
+        </div>
+      </div>
+      <div class="container-content-form">
+        <div class="container-content">
+          <label class="" for="conteudo">Conteúdo</label>
+          <div class="test">
+            <textarea type="text" data-test="field-conteudo" id="conteudo" name="conteudo" class="field" [(ngModel)]="conteudo"
+              required></textarea>
+            <section class="grid grid-template-areas-form">
+              <div class="item-space space"></div>
+              <div class="item-button button">
+                <button id="enviar-formulario" data-test="btn-submit" class="btn-create-topic" (click)="enviarFormulario()">
+                  <a>Enviar</a>
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="custom-card-success-message" *ngIf="mensagemDeSucesso">
+        {{ mensagemDeSucesso }}
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

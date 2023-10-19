@@ -8,19 +8,48 @@
   width: auto;
   margin: 0 auto;
   padding: 0;
+  margin: 0 30px 0 30px;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 5fr 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 30px 0 30px;
+  grid-template-columns: 6fr 1fr 1fr;
+  grid-template-areas:
+    "nav";
 }
 
-.nav-item {
+.nav-content {
   text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav";
+  }
+
+  .nav-content {
+    text-align: left;
+  }
+
+  .nav-title {
+    font-size: 12px;
+  }
+
+  .nav-item {
+    font-size: 12px;
+  }
+
+  .nav-subtitle {
+    font-size: 14px;
+  }
+
+  .nav-text {
+    font-size: 10px;
+  }
+
 }
 
 .nav-title {
@@ -41,7 +70,7 @@
   color: #725C5C;
 }
 
-.nav-issn {
+.nav-text {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
@@ -51,18 +80,21 @@
 }
 
 .language-container {
-  display: inline-block;
-  position: relative;
-  border: 1px solid #CCCCCC;
-  width: 97px;
-  height: 34px;
-  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .language-content {
   display: flex;
   align-items: center;
   cursor: pointer;
+  border: 1px solid #CCCCCC;
+  width: 97px;
+  height: 34px;
+  border-radius: 3px;
 }
 
 .language-abbr {
@@ -89,7 +121,6 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   min-width: 160px;
-  border: 1px solid #ccc;
 }
 
 .dropdown-menu {
@@ -189,7 +220,7 @@
 
   .language-container {
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     align-items: center;
   }
@@ -197,6 +228,7 @@
   .language-abbr img {
     width: 10px;
     height: 10px;
+    margin-left: 5px;
   }
 
   .user-info {
@@ -213,16 +245,31 @@
     padding: 5px;
   }
 
-  .user-welcome, .user-email {
+  .user-welcome,
+  .user-email {
     text-align: center;
   }
 
-  .notification-icon, .notification-badge {
+  .notification-icon,
+  .notification-badge {
     display: none;
+  }
+
+  .language-dropdown {
+    width: 100%;
   }
 }
 
-.nav-title, .nav-subtitle, .nav-issn, .language-abbr p, .language-dropdown p, .user-welcome, .user-email, .notification-badge {
+.nav-title,
+.nav-subtitle,
+.nav-text,
+.language-abbr p,
+.language-dropdown p,
+.user-welcome,
+.user-email,
+.notification-badge {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+
+

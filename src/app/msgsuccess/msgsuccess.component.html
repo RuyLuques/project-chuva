@@ -11,95 +11,61 @@
 </head>
 
 <body>
-  <main class="grid grid-template-areas-4">
-    <div class="logo item">
-      <h1>SLACA 2019</h1>
+  <div class="grid-container">
+    <app-logo class="logo"></app-logo>
+    <aside>
+      <app-sidenav></app-sidenav>
+    </aside>
+    <nav class="navbar">
+      <app-header></app-header>
+    </nav>
+    <div class="columns">
+      <div class="column">
+        <app-columns></app-columns>
+      </div>
+      <div class="column">
+        <div class="column-resume">
+          <app-resume></app-resume>
+        </div>
+      </div>
+      <div class="column">
+        <div class="column-discussions">
+          <div class="container-content-discussions">
+            <div class="content-title">
+              <h2>Discussões</h2>
+            </div>
+            <div class="topico-duvida-enviado" id="topico-duvida-enviado" *ngIf="mostrarMensagemDeSucesso">
+              <div class="content-subtitle">
+                <p>Seu tópico foi enviado com sucesso! :D</p>
+              </div>
+              <div class="content-text">
+                <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico
+                  for respondido!</p>
+              </div>
+              <div class="card-content-link">
+                <a href="#" (click)="redirecionarParaPadrao()">Descubra outros trabalhos!</a>
+              </div>
+              <div class="custom-divider-button">
+                <button class="btn-create-topic" (click)="exibirFormulario()">
+                  criar novo tópico
+                </button>
+                <div class="divider"></div>
+              </div>
+              <div class="custom-card-content-dark">
+                <app-carddark></app-carddark>
+              </div>
+              <div class="custom-card-content">
+                <app-card></app-card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <app-footer></app-footer>
+    </footer>
   </div>
-  <app-header class="nav item"></app-header>
-    <article class="content item">
-      <section class="content-1">
-        <section class="grid grid-template-column-2">
-          <div class="item">
-            <div class="content-video">
-              <h2 id="titulo-trabalho">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09
-                e 15 anos, do município de Campinas/SP</h2>
-            </div>
-          </div>
-          <div class="item">
-            <div class="custom-card-btn-group">
-              <div class="custom-card-btn-img">
-                <button class="custom-card-btn-img-1">
-                  <img src="assets/download.svg" alt="Ícone de download" />
-                  <p>Download</p>
-                </button>
-                <button class="custom-card-btn-img-2">
-                  <img src="assets/btn-favoritar.svg" alt="Ícone de favorito" />
-                </button>
-                <button class="custom-card-btn-img-3">
-                  <img src="assets/doi.svg" alt="Ícone DOI" />
-                </button>
-              </div>
-            </div>
-            <div class="custom-card-btn-text">
-              <h3>COMO CITAR ESSE TRABALHO?</h3>
-            </div>
-          </div>
-        </section>
-        <section class="grid grid-template-columns answered-topic">
-          <div class="item">
-            <div class="content-content-video">
-              <div class="content-content-video-1">
-                <img src="assets/video.svg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="container-content-aside-right">
-              <app-details></app-details>
-            </div>
-          </div>
-        </section>
-        <section class="grid container-content-card answered-topic">
-          <section class="custom-card">
-            <app-resume></app-resume>
-          </section>
-          <div class="content-card">
-            <div class="custom-card">
-              <div class="custom-card-header">
-                <h2>Discussões</h2>
-              </div>
-              <div class="topico-duvida-enviado" id="topico-duvida-enviado" *ngIf="mostrarMensagemDeSucesso">
-                <div class="card-content-title">
-                  <p>Seu tópico foi enviado com sucesso! :D</p>
-                </div>
-                <div class="card-content-text">
-                  <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico
-                    for respondido!</p>
-                </div>
-                <a href="#" class="card-content-link" (click)="redirecionarParaPadrao()">Descubra outros trabalhos!</a>
-                <div class="linha-divisoria-topico-enviado"></div>
-                <div class="custom-divider-button">
-                  <button class="btn-create-topic" (click)="exibirFormulario2()">
-                    criar novo tópico
-                  </button>
-                  <div class="divider"></div>
-                </div>
-                <div class="custom-card-content-dark">
-                  <app-carddark></app-carddark>
-                </div>
-                <div class="custom-card-content">
-                  <app-card></app-card>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-    </article>
-    <app-sidenav class="sidenav item"></app-sidenav>
-    <div class="divider"></div>
-    <app-footer class="footer item"></app-footer>
-  </main>
 </body>
 
 </html>

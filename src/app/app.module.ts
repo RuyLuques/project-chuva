@@ -15,6 +15,10 @@ import { DiscussionsComponent } from './components/discussions/discussions.compo
 import { CardComponent } from './components/card/card.component';
 import { CardDarkComponent } from './components/carddark/carddark.component';
 import { MsgsuccessComponent } from './msgsuccess/msgsuccess.component';
+import { ColumnsComponent } from './components/columns/columns.component';
+import { LogoComponent } from './components/logo/logo.component';
+import { CardFormComponent } from './components/cardform/cardform.component';
+import { FormMessageComponent } from './components/form/form.component';
 
 import { AppComponent } from './app.component';
 
@@ -33,6 +37,10 @@ import { AppComponent } from './app.component';
     CardComponent,
     CardDarkComponent,
     MsgsuccessComponent,
+    ColumnsComponent,
+    LogoComponent,
+    CardFormComponent,
+    FormMessageComponent,
   ],
   imports: [
     BrowserModule,

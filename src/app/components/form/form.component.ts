@@ -7,4 +7,4 @@ import { Router } from '@angular/router';
   styleUrls: ['./form.component.scss']
 })
 
-export class FormComponent {}
+export class FormMessageComponent {}

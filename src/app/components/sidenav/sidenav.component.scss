@@ -1,6 +1,24 @@
 .sidenav {
   grid-area: sidenav;
-  background-color: #fff;
+}
+
+.logo {
+  grid-area: logo;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo h1 {
+  width: 100%;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
 }
 
 .content-sidenav li {
@@ -37,10 +55,3 @@ a {
   background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
 }
 
-.footer {
-  grid-area: footer;
-}
-
-.footer img {
-  padding: 10px;
-}

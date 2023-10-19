@@ -1,4 +1,13 @@
 .container-content-resume {
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ECECEC;
+  border-radius: 3px, 3px, 0px, 0px;
+  height: auto;
+}
+
+.content-resume {
   background-color: #FDF1EB;
   color: #4E4E4E;
   padding: 10px;

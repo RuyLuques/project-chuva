@@ -11,9 +11,8 @@
 </head>
 
 <body>
-  <main>
-    <div class="container-content-discussions">
-      <div class="content-title">
+    <div class="container-content-discussions"  data-test="container-content-discussions">
+      <div class="content-title" data-test="content-subtitle">
         <h2>Discussões</h2>
       </div>
       <div class="container-content-msgsuccess" *ngIf="!mostrarMensagemDeSucesso">
@@ -25,21 +24,22 @@
           <div class="icon-item"><img src="assets/icone2.svg" alt="Ícone 2" /></div>
           <div class="icon-item"><img src="assets/icone3.svg" alt="Ícone 3" /></div>
         </div>
-        <div class="content-text">
+        <div class="content-text" data-test="content-text">
           <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
             questionamentos ou sugestões para o autor!</p>
         </div>
         <div class="content-group-btn">
-          <button class="btn-create-topic" (click)="exibirFormulario()">
+          <button class="btn-create-topic" data-test="btn-create-topic" (click)="exibirFormulario()">
             <img src="assets/btn-mais.svg" alt="Ícone 1" />
             criar tópico
           </button>
           <div class="divider"></div>
         </div>
-        <app-card></app-card>
+        <app-card data-test="app-card"></app-card>
       </div>
     </div>
-  </main>
 </body>
 
 </html>
+
+

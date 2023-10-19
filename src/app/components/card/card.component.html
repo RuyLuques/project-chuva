@@ -12,7 +12,7 @@
 
 <body>
 <main>
-  <div class="container-content-cards" (click)="toggleNovoCard($event)">
+  <div class="container-content-cards" data-test="card-component" (click)="toggleNovoCard($event)">
     <div class="container-content-card">
         <div class="content-question">
           <div class="content-question-text">
@@ -37,7 +37,7 @@
         </div>
       </div>
 
-      <section class="container-content-card-none" style="display: none;">
+      <section class="container-content-card-none" data-test="card-component-none" style="display: none;">
         <div class="container-content-card-open">
         <div class="question-none">
           <div class="question-group-none">
@@ -174,7 +174,7 @@
         </div>
       </div>
 
-      <section class="container-content-card-none" style="display: none;">
+      <section class="container-content-card-none" data-test="card-component-none" style="display: none;">
         <div class="container-content-card-open">
         <div class="question-none">
           <div class="question-group-none">
