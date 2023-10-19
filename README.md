@@ -22,7 +22,7 @@ Este projeto foi criado como parte do meu processo de candidatura para a vaga de
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repo.git
+   git clone https://github.com/RuyLuques/project-chuva
    
 2. Instale as dependências:
    ```bash
