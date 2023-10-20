@@ -12,12 +12,6 @@ Este projeto foi criado como parte do meu processo de candidatura para a vaga de
 - <a href="https://github.com/RuyLuques?tab=repositories">GitHub</a>
 - <a href="https://www.youtube.com/@ruyluques/videos">YouTube</a>
 
-## Pré-requisitos :wrench:
-
-- Node.js e Angular CLI instalados
-- Navegador da Web moderno
-- Figma para visualização das telas
-
 ## Como Executar o Projeto :rocket:
 
 1. Clone este repositório:
@@ -27,6 +21,15 @@ Este projeto foi criado como parte do meu processo de candidatura para a vaga de
 2. Instale as dependências:
    ```bash
    npm install
+
+3. Compile o código:
+   ```bash
+   ng serve
+
+4. Realize testes (cypress):
+   ```bash
+   npm run test
+
 
 
 # Obrigada pelo 'clone' 😊 
