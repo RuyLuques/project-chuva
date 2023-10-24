@@ -11,12 +11,12 @@
 </head>
 
 <body>
-  <div class="container-content-card" data-test="container-content-card">
+  <div class="container-content-card" data-test="container-content-card" (click)="redirectToEditTopic()">
     <div class="content-message-group">
       <div class="content-message">
         <img src="assets/ok.svg" alt="">
         <p class="text-msg">Aguardando feedback dos autores</p>
-        <a class="text-edit">Editar tópico</a>
+        <a class="text-edit" href="#">Editar tópico</a>
       </div>
     </div>
     <div class="container-content-dark" data-test="container-content-dark">

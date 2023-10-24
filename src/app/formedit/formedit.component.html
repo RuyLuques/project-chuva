@@ -31,29 +31,18 @@
       <div class="column">
         <div class="column-discussions">
           <div class="container-content-discussions">
-            <div class="content-title">
-              <h2>Discussões</h2>
-            </div>
-            <div class="topico-duvida-enviado" id="topico-duvida-enviado" data-test="topico-duvida-enviado"
-              *ngIf="mostrarMensagemDeSucesso">
-              <div class="content-subtitle">
-                <p>Seu tópico foi enviado com sucesso! :D</p>
-              </div>
-              <div class="content-text">
-                <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico
-                  for respondido!</p>
-              </div>
-              <div class="card-content-link" data-test="card-content-link">
-                <a href="#" (click)="redirecionarParaPadrao()">Descubra outros trabalhos!</a>
-              </div>
-              <div class="custom-divider-button">
-                <button class="btn-create-topic" data-test="btn-create-topic" (click)="exibirFormulario()">
-                  criar novo tópico
-                </button>
-                <div class="divider" data-test="divider"></div>
+
               </div>
               <div class="custom-card-content-dark">
-                <app-carddark data-test="carddark"></app-carddark>
+                <app-cardedit data-test="cardedit">
+                  <form id="cardedit-form">
+                    <label for="title">Título:</label>
+                    <input type="text" id="title" name="title">
+                    <label for="content">Conteúdo:</label>
+                    <textarea id="content" name="content"></textarea>
+                    <button type="submit">Salvar</button>
+                  </form>
+                </app-cardedit>
               </div>
               <div class="custom-card-content">
                 <app-card data-test="card"></app-card>
@@ -61,8 +50,7 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+
     <footer class="footer">
       <app-footer></app-footer>
     </footer>

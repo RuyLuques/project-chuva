@@ -5,6 +5,7 @@ import { routing } from './app.routing';
 
 import { HomeComponent } from './home/home.component';
 import { FormComponent } from './form/form.component';
+import { FormEditComponent } from './formedit/formedit.component';
 import { TopicsComponent } from './topics/topics.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -18,6 +19,7 @@ import { MsgsuccessComponent } from './msgsuccess/msgsuccess.component';
 import { ColumnsComponent } from './components/columns/columns.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { CardFormComponent } from './components/cardform/cardform.component';
+import { CardEditComponent } from './components/cardedit/cardedit.component';
 
 import { AppComponent } from './app.component';
 
@@ -26,6 +28,7 @@ import { AppComponent } from './app.component';
     AppComponent,
     HomeComponent,
     FormComponent,
+    FormEditComponent,
     TopicsComponent,
     SidenavComponent,
     FooterComponent,
@@ -39,6 +42,7 @@ import { AppComponent } from './app.component';
     ColumnsComponent,
     LogoComponent,
     CardFormComponent,
+    CardEditComponent,
   ],
   imports: [
     BrowserModule,

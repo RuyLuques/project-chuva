@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SLACA 2019</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="description" content="Descrição da página">
+  <meta name="keywords" content="palavra-chave1, palavra-chave2">
+</head>
+
+<body>
+  <div class="container-content-card" data-test="container-content-card">
+    <div *ngIf="editing" class="container-content-edit" data-test="container-content-edit">
+      <div class="content-question">
+        <form (submit)="saveEditedTopic()">
+          <div class="content-question-text">
+            <h3>Editar comentário</h3>
+            <div class="card-content-link" data-test="card-content-link">
+              <a href="#" (click)="redirecionarParaPadrao()">Descubra outros trabalhos!</a>
+            </div>
+            <button class="btn-create-topic" data-test="btn-create-topic" (click)="exibirFormulario()">
+              criar novo tópico
+            </button>
+          </div>
+          <div class="form-group">
+            <label>Editar assunto</label>
+            <input type="text" [(ngModel)]="editedTitle" placeholder="Novo assunto">
+          </div>
+          <div class="form-group">
+            <label>Editar conteúdo</label>
+            <textarea [(ngModel)]="editedContent" placeholder="Novo conteúdo"></textarea>
+          </div>
+          <button type="submit">Salvar</button>
+        </form>
+      </div>
+      <div *ngIf="saved" class="success-message">
+        Edição salva com sucesso!
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

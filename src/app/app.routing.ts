@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { FormComponent } from './form/form.component';
+import { FormEditComponent } from './formedit/formedit.component';
 import { HomeComponent } from './home/home.component';
 import { MsgsuccessComponent } from './msgsuccess/msgsuccess.component';
 import { TopicsComponent } from './topics/topics.component';
@@ -21,6 +22,7 @@ const APP_ROUTES: Routes = [
   { path: 'form', component: FormComponent },
   { path: 'topics', component: TopicsComponent },
   { path: 'mgsuccess', component: MsgsuccessComponent },
+  { path: 'formedit', component: FormEditComponent },
   { path: 'test/resume', component: ResumeComponent },
   { path: 'test/columns', component: ColumnsComponent },
   { path: 'test/card', component: CardComponent },
