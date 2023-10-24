@@ -14,7 +14,7 @@
   <div class="container-content-card" data-test="container-content-card">
     <div *ngIf="editing" class="container-content-edit" data-test="container-content-edit">
       <div class="content-question">
-        <form (submit)="saveEditedTopic()">
+        <form (submit)="saveEditedTopic()" data-test="form">
           <div class="content-question-text">
             <h3>Editar comentário</h3>
             <div class="card-content-link" data-test="card-content-link">

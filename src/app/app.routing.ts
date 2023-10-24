@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CardComponent } from './components/card/card.component';
 import { CardDarkComponent } from './components/carddark/carddark.component';
 import { CardFormComponent } from './components/cardform/cardform.component';
+import { CardEditComponent } from './components/cardedit/cardedit.component';
 import { ColumnsComponent } from './components/columns/columns.component';
 import { DetailsComponent } from './components/details/details.component';
 import { DiscussionsComponent } from './components/discussions/discussions.component';
@@ -28,6 +29,7 @@ const APP_ROUTES: Routes = [
   { path: 'test/card', component: CardComponent },
   { path: 'test/cardform', component: CardFormComponent },
   { path: 'test/carddark', component: CardDarkComponent },
+  { path: 'test/cardedit', component: CardEditComponent },
   { path: 'test/discussions', component: DiscussionsComponent },
   { path: 'test/details', component: DetailsComponent },
   { path: 'test/header', component: HeaderComponent },

@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "start-server-and-test start http://localhost:4200 cypress:run-base",
+    "test:component": "npx cypress run --spec cypress/e2e/",
     "cypress:run-base": "npx cypress run --env type=base"
   },
   "private": true,
