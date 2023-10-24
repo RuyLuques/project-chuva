@@ -12,30 +12,30 @@
 
 <body>
   <div class="grid-container">
-    <app-logo class="logo"></app-logo>
+    <app-logo class="logo" data-test="logo"></app-logo>
     <aside>
-      <app-sidenav></app-sidenav>
+      <app-sidenav data-test="sidenav"></app-sidenav>
     </aside>
     <nav class="navbar">
-      <app-header></app-header>
+      <app-header data-test="header"></app-header>
     </nav>
     <div class="columns">
       <div class="column">
-        <app-columns></app-columns>
+        <app-columns data-test="columns"></app-columns>
       </div>
       <div class="column">
         <div class="column-resume">
-          <app-resume></app-resume>
+          <app-resume data-test="resume"></app-resume>
         </div>
       </div>
       <div class="column">
         <div class="column-discussions">
-          <app-cardform></app-cardform>
+          <app-cardform data-test="discussions"></app-cardform>
         </div>
       </div>
     </div>
     <footer class="footer">
-      <app-footer></app-footer>
+      <app-footer data-test="footer"></app-footer>
     </footer>
   </div>
 </body>

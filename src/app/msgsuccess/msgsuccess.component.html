@@ -14,18 +14,18 @@
   <div class="grid-container">
     <app-logo class="logo"></app-logo>
     <aside>
-      <app-sidenav></app-sidenav>
+      <app-sidenav data-test="sidenav"></app-sidenav>
     </aside>
     <nav class="navbar">
-      <app-header></app-header>
+      <app-header data-test="header"></app-header>
     </nav>
     <div class="columns">
       <div class="column">
-        <app-columns></app-columns>
+        <app-columns data-test="columns"></app-columns>
       </div>
       <div class="column">
         <div class="column-resume">
-          <app-resume></app-resume>
+          <app-resume data-test="resume"></app-resume>
         </div>
       </div>
       <div class="column">
@@ -34,7 +34,7 @@
             <div class="content-title">
               <h2>Discussões</h2>
             </div>
-            <div class="topico-duvida-enviado" id="topico-duvida-enviado" *ngIf="mostrarMensagemDeSucesso">
+            <div class="topico-duvida-enviado" id="topico-duvida-enviado" data-test="topico-duvida-enviado" *ngIf="mostrarMensagemDeSucesso">
               <div class="content-subtitle">
                 <p>Seu tópico foi enviado com sucesso! :D</p>
               </div>
@@ -42,20 +42,20 @@
                 <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico
                   for respondido!</p>
               </div>
-              <div class="card-content-link">
+              <div class="card-content-link" data-test="card-content-link">
                 <a href="#" (click)="redirecionarParaPadrao()">Descubra outros trabalhos!</a>
               </div>
               <div class="custom-divider-button">
-                <button class="btn-create-topic" (click)="exibirFormulario()">
+                <button class="btn-create-topic" data-test="btn-create-topic" (click)="exibirFormulario()">
                   criar novo tópico
                 </button>
-                <div class="divider"></div>
+                <div class="divider" data-test="divider"></div>
               </div>
               <div class="custom-card-content-dark">
-                <app-carddark></app-carddark>
+                <app-carddark data-test="carddark"></app-carddark>
               </div>
               <div class="custom-card-content">
-                <app-card></app-card>
+                <app-card data-test="card"></app-card>
               </div>
             </div>
           </div>
